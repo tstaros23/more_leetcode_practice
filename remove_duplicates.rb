@@ -1,4 +1,8 @@
 def remove_duplicates(nums)
+    length = nums.length
+    if length == 0 || length == 1
+        return length
+    end
     i = 0
     var = 0
     k = 0
