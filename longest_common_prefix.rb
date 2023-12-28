@@ -36,9 +36,12 @@ def longest_common_prefix(strs)
 
             j += 1
             i += 1
-        else
+        else if string == hash[strs[j]][m]
           j += 1
+        else
+          return result
         end
+      end
       i += 1
     end
   end
@@ -46,4 +49,4 @@ def longest_common_prefix(strs)
 end
 strs = ["flower","flow","flight"]
 strs2 = ["c","acc","ccc"]
-longest_common_prefix(strs2)
+longest_common_prefix(strs)
